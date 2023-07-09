@@ -79,6 +79,8 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
@@ -203,17 +205,6 @@ ul {
     color: #404bbf;
 }
 
-/*.header-link:hover::after {
-    display: block;
-    content: "";
-    width: calc(100% + 40px);
-    height: 2px;
-    background: var(--accent);
-    position: absolute;
-    bottom: -39px;
-    left: -20px;
-}*/
-
 .first-page.link.current.link-active {
     color: #404bbf;
 }
@@ -294,22 +285,53 @@ gap: 40px;
     margin: 0 auto;
     padding: 112px 0;
     background-color: var(--background-color-dark);
+    background-image: linear-gradient(#2e2f42b3, #2e2f42b3), url(../images/hero/Dark-bg_mob@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-@media only screen and (min-width: 1158px) {
-.headline {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 188px 0;
-        background-color: var(--title-text-color);
-        background-image: linear-gradient(#2e2f42b3, #2e2f42b3), url(../images/bg-img1.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+/*___________________
+    MOBILE SCREEN
+____________________*/
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .headline {
+        background-image: linear-gradient(#2e2f42b3, #2e2f42b3), url(../images/hero/Dark-bg_mob@2x.jpg);
     }
+}
+
+/*___________________
+    TABLET SCREEN
+____________________*/
+
+@media only screen and (min-width: 429px) {
+   .headline {
+    background-image: linear-gradient(#2e2f42b3, #2e2f42b3), url(../images/hero/Dark-bg_tabl@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .headline {
+          background-image: linear-gradient(#2e2f42b3, #2e2f42b3), url(../images/hero/Dark-bg_tabl@2x.jpg);
+      }
+  }
+}
+
+/*___________________
+    DESKTOP SCREEN
+____________________*/
+
+@media only screen and (min-width: 769px) {
+.headline {
+        background-image: linear-gradient(#2e2f42b3, #2e2f42b3), url(../images/hero/people-office_desk@1x.jpg); 
+    }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .headline {
+                background-image: linear-gradient(#2e2f42b3, #2e2f42b3), url(../images/hero/people-office_desk@1x.jpg);
+            }
 }
 
 .headline-title {
