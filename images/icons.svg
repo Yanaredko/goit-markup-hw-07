@@ -136,10 +136,10 @@
         </symbol>
 
         <!--HAMBURGER MENU-->
-        <symbol id="icon-menu-hamburger" viewBox="0 0 47 32">
+        <svg id="icon-menu-hamburger" width="32" height="22" viewBox="0 0 32 22" fill="none">
             <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42"
                 stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-        </symbol>
+        </svg>
 
     </defs>
 </svg>
